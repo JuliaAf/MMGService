@@ -1,0 +1,115 @@
+.proj {
+  margin-bottom: 115px;
+  padding-top: 30px;
+
+  background: url(../img/proj-bg.png) no-repeat center 80%;
+  & .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 115px;
+
+    border-bottom: 1px solid @border-color;
+  }
+  &__title {
+    flex-basis: 100%;
+    margin-bottom: 90px;
+    padding: 65px 0 0 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: url(../img/title-img.png) no-repeat center center;
+  }
+  &__list {
+    position: relative;
+
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding-left: 40px;
+
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 55px;
+    font-family: "NotoSans", "Arial", sans-serif;
+    vertical-align: top;
+  }
+  &__list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 27px;
+    height: 332px;
+
+    vertical-align: top;
+
+    background: url(../img/proj-list.png) no-repeat;
+  }
+  &__form {
+    flex-basis: 350px;
+    box-sizing: border-box;
+    padding: 30px 35px 30px 35px;
+
+    text-align: center;
+
+    background: url(../img/linear.png) repeat-y @white;
+    background-position: right center;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.26);
+  }
+  &__form-title {
+    display: block;
+    margin-bottom: 50px;
+
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "NotoSans", "Arial", sans-serif;
+    text-align: left;
+    color: @lightgrey;
+    text-transform: none;
+  }
+  &__form-title span {
+    margin-bottom: 30px;
+
+    font-size: 21px;
+    font-family: "OfficinaSerifC", serif;
+    text-align: left;
+    color: @darkblue;
+    text-transform: uppercase;
+  }
+
+  &__form input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+
+    font-size: 12px;
+  }
+  &__form input:focus {
+    outline: 0;
+  }
+  &__form button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+
+    font-size: 12px;
+    color: @white;
+    text-transform: uppercase;
+
+    background: @yellow;
+    border: 0;
+    border-radius: 3px;
+  }
+  &__form button:hover {
+    background: #fce093;
+  }
+  &__form button:focus {
+    outline: 0;
+  }
+}

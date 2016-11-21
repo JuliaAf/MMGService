@@ -1,0 +1,78 @@
+.masters {
+  display: none;
+  & .wrapper {
+    margin-bottom: 90px;
+  }
+  &__title {
+    margin-bottom: 45px;
+    padding: 65px 0 20px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: url(../img/title-img.png) no-repeat center center;
+  }
+  &__about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  &__about--big {
+    margin-bottom: 80px;
+  }
+  // &__about--small {
+  //   margin-bottom: 60px;
+  // }
+  &__info {
+    padding: 20px;
+
+    font-size: 12px;
+    color: @lightgrey;
+  }
+  &__info span {
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "OfficinaSerifC",  serif;
+    color: @darkblue;
+    text-transform: uppercase;
+  }
+  &__info--small {
+    padding: 10px;
+
+    font-size: 11px;
+  }
+  &__info--small span {
+    font-size: 13px;
+  }
+}
+
+.masters__input {
+  display: none;
+}
+
+.masters__block {
+  display: none;
+}
+
+#masters__input-1:checked ~ .pagination label[for="masters__input-1"],
+#masters__input-2:checked ~ .pagination label[for="masters__input-2"],
+#masters__input-3:checked ~ .pagination label[for="masters__input-3"] {
+  color: @white;
+
+  background: black;
+}
+#masters__input-1:checked ~ .masters__block--1 {
+  display: block;
+}
+#masters__input-2:checked ~ .masters__block--2 {
+  display: block;
+}
+#masters__input-3:checked ~ .masters__block--3 {
+  display: block;
+}
+.masters__block {
+  min-height: 670px;
+}

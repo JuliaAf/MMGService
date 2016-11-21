@@ -1,0 +1,36 @@
+.pagination {
+  align-self: flex-end;
+  & label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding-top: 9px;
+
+    text-align: center;
+    color: black;
+
+    border: 1px solid @border-color;
+  }
+  // & a.active {
+  //   color: @white;
+  //
+  //   background: black;
+  // }
+  & label:hover,
+  & label:active {
+    color: @white;
+
+    background: rgba(0,0,0,0.4);
+  }
+  &--masters {
+    text-align: center;
+  }
+}
+#works__input-1:checked ~ .pagination label[for="works__input-1"],
+#works__input-2:checked ~ .pagination label[for="works__input-2"],
+#works__input-3:checked ~ .pagination label[for="works__input-3"] {
+  color: @white;
+
+  background: black;
+}

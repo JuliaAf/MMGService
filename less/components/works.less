@@ -1,0 +1,142 @@
+.works {
+  & .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 615px;
+    margin-bottom: 35px;
+    padding: 10px 60px 85px 60px;
+
+    background: url(../img/works-bg.png) no-repeat left top;
+    background-size: 100%;
+  }
+  &__work {
+    display: none;
+  }
+  & h3 {
+    font-size: 21px;
+    font-family: "OfficinaSerifC", serif;
+    color: @darkblue;
+  }
+  & p {
+    margin-bottom: 43px;
+
+    color: @lightgrey;
+  }
+  &__title {
+    margin-bottom: 45px;
+    padding: 65px 0 20px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: url(../img/title-img.png) no-repeat center center;
+  }
+  &__input {
+    display: none;
+  }
+  &__stats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-bottom: 43px;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: @lightgrey;
+  }
+  &__stats-data {
+    margin-right: 45px;
+    margin-left: 15px;
+    padding: 8px 17px;
+
+    color: @darkblue;
+
+    background: @yellow;
+    border-radius: 3px;
+  }
+  &__stats a {
+    margin-left: 40px;
+
+    font-size: 12px;
+    color: #2167ad;
+    text-decoration: underline;
+  }
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  &__item::before {
+    content: "До";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 10;
+
+    box-sizing: border-box;
+    width: 70px;
+    height: 40px;
+    padding: 12px 24px 10px 24px;
+
+    font-weight: 700;
+    color: @white;
+
+    background: black;
+  }
+  &__item::after {
+    content: "После";
+    position: absolute;
+    bottom: 30px;
+    left: 313px;
+    z-index: 10;
+
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    padding: 12px 24px 10px 24px;
+
+    font-weight: 700;
+    color: @white;
+
+    background: black;
+  }
+  &__img {
+    width: 293px;
+    height: 400px;
+  }
+  &__img--left {
+    z-index: 5;
+
+    margin-right: 20px;
+  }
+  &__img--right {
+    margin-right: 40px;
+  }
+  &__item-description {
+    max-height: 380px;
+    overflow-y: scroll;
+
+    font-size: 12px;
+    line-height: 24px;
+    color: @lightgrey;
+  }
+}
+
+#works__input-1:checked ~ .pagination label[for="works__input-1"],
+#works__input-2:checked ~ .pagination label[for="works__input-2"],
+#works__input-3:checked ~ .pagination label[for="works__input-3"] {
+  color: @white;
+
+  background: black;
+}
+#works__input-1:checked ~ .works__work-1 {
+  display: block;
+}
+#works__input-2:checked ~ .works__work-2 {
+  display: block;
+}
+#works__input-3:checked ~ .works__work-3 {
+  display: block;
+}

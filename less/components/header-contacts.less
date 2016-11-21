@@ -1,0 +1,79 @@
+.header-contacts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+
+  font-size: 12px;
+  color: @white;
+
+  border-bottom: 1px solid rgba(255,255,255,0.23);
+
+  &__logo {
+    font-size: 26px;
+    font-family: "OfficinaSerifC", sans-serif;
+    color: @white;
+  }
+  &__logo span {
+    margin-right: 8px;
+    padding: 13px 20px 10px 20px;
+
+    font-size: 25px;
+
+    background: @yellow;
+  }
+  &__logo p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 55px;
+    font-family: "NotoSans", sans-serif;
+  }
+  &__items {
+    display: flex;
+    flex-basis: 740px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 0;
+    padding-left: 25px;
+
+    list-style-type: none;
+    vertical-align: middle;
+
+    border-left: 1px solid @white;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -40px;
+
+    width: 28px;
+    height: 36px;
+
+    background: url(../img/pin.png) no-repeat center center;
+  }
+
+  &__item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+
+    width: 34px;
+    height: 34px;
+
+    vertical-align: middle;
+
+    background: url(../img/phone-icon.png) no-repeat center center;
+  }
+  &__item:nth-child(3) span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

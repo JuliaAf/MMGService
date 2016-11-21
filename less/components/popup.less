@@ -1,0 +1,32 @@
+.popup {
+  position: relative;
+  &__regards-open {
+    cursor: pointer;
+  }
+  &__regards-close {
+    position: absolute;
+    top: -15px;
+    left: 445px;
+    z-index: 30;
+
+    display: none;
+    width: 30px;
+    height: 30px;
+
+    background: url(../img/access-close.png);
+    cursor: pointer;
+  }
+
+  &__regard-img-container {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    z-index: 30;
+
+    display: none;
+    width: 480px;
+    height: 378px;
+
+    transform: translateX(-50%);
+  }
+}
