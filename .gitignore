@@ -1,0 +1,8 @@
+node_modules/
+.csscomb.json
+*.log
+*.psd
+*.ai
+.DS_Store
+Thumbs.db
+.idea

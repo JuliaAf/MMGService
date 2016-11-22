@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1, user-scalable=0">
+  <title>MMG Service</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.form.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/script-mail.js"></script>
+  <script src="js/script-popup.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-contacts">
+          <a class="header-contacts__logo" href="#">
+            <span>MMG</span> Service<br>
+            <p>Строительные и ремонтные работы</p>
+          </a>
+          <ul class="header-contacts__items">
+            <li class="header-contacts__item">Высококлассный ремонт офисов в<br>Москве и Московской области с 2012 года</li>
+            <li class="header-contacts__item">г. Москва ул. Трофимова, д. 27</li>
+            <li class="header-contacts__item"><span><a href="tel:+74955323434">+7 (495) 532-34-34</a></span><br>заказать звонок</li>
+          </ul>
+        </div>
+
+        <div class="header-content">
+          <div class="header-content__info">
+            <h1 class="header-content__title"><b>Новый ремонт в вашем офисе</b><br> с гарантией <span>2 года</span></h1>
+            <p>Сделаем ремонт в офисе 100 м2 за 16-48 дней стоимостью от 1 090 до 5 730 руб./м2.</p>
+            <a class="header-content__access-open">Допуск СРО</a>
+            <img class="header-content__access-img" src="img/access-img.jpg" alt="access">
+            <a class="header-content__access-close"></a>
+          </div>
+
+          <form class="header-content__form" method="post" action="php/mailer.php">
+            <h2 class="header-content__form-title">
+              Вызовите бесплатно
+              <span>нашего специалиста для расчета сметы</span>
+            </h2>
+            <input type="text" placeholder="Ваше имя" name="name">
+            <input type="text" placeholder="*Ваш телефон" name="phone">
+            <button type="submit" name="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div><!--wrapper-->
+    </header>
+    <section class="works">
+      <h2 class="works__title">наши работы</h2>
+      <div class="wrapper">
+        <input class="works__input" id="works__input-1" type="radio" name="works__input" checked>
+        <input class="works__input" id="works__input-2" type="radio" name="works__input">
+        <input class="works__input" id="works__input-3" type="radio" name="works__input">
+        <div class="pagination">
+          <label for="works__input-1">1</label>
+          <label for="works__input-2">2</label>
+          <label for="works__input-3">3</label>
+        </div>
+        <div class="works__work works__work-1">
+          <h3>Ремонт офиса компании ЗАО «Трансфингрупп» </h3>
+          <p>г.Москва, ул.Щепкина, д.33</p>
+          <div class="works__stats">
+            <div class="works__stats-area">Общая площадь<span class="works__stats-data">58м<sup>2</sup></span></div>
+            <div class="works__stats-price">Стоимость<span class="works__stats-data">645 890 руб</span></div>
+            <div class="works__stats-time">Срок<span class="works__stats-data">30 дней</span></div>
+            <div class="popup">
+              <a class="popup__regards-open">благодарственное письмо</a>
+              <div class="popup__regard-img-container">
+                <img class="popup__regards-img" src="img/regards-1.jpg" alt="regards" width="480" height="678">
+                <a class="popup__regards-close"></a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <img class="works__img works__img--left" src="img/works-2.jpg" alt="work" width="293" height="400">
+            <img class="works__img works__img--right" src="img/works-1.jpg" alt="work" width="293" height="400">
+            <div class="works__item-description">
+              - Демонтажные работы<br>
+              - Возведение перегородок из ГКЛ<br>
+              - Монтаж системы кондиционирования<br>
+              - Монтаж потолка типа "Армстронг"<br>
+              - Монтаж дверных проемов<br>
+              - Установка дверей<br>
+              - Покраска стен<br>
+              - Устройство наливного пола<br>
+              - Укладка плитки на пол<br>
+              - Монтаж пластикового плинуса<br>
+              - Электромонтажные работы<br>
+              - Монтаж СКС<br><br>
+              Страхи: уложиться в срок чтобы обеспечить
+              бесперебойную работу сотрудников.<br><br>
+              Цена на период проведения работ осталась неизменной.<br><br>
+              * В стоимость включена работа,
+              строительный и отделочный материал
+            </div>
+          </div><!--work__item end-->
+        </div><!--work-1 end-->
+        <div class="works__work works__work-2">
+          <h3>Ремонт офиса компании ЗАО «Трансфингрупп» </h3>
+          <p>г.Москва, ул.Щепкина, д.33</p>
+          <div class="works__stats">
+            <div class="works__stats-area">Общая площадь<span class="works__stats-data">30м<sup>2</sup></span></div>
+            <div class="works__stats-price">Стоимость<span class="works__stats-data">234 800 руб</span></div>
+            <div class="works__stats-time">Срок<span class="works__stats-data">16 дней</span></div>
+            <div class="popup">
+              <a class="popup__regards-open">благодарственное письмо</a>
+              <div class="popup__regard-img-container">
+                <img class="popup__regards-img" src="img/regards-2.jpg" alt="regards" width="480" height="678">
+                <a class="popup__regards-close"></a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <img class="works__img works__img--left" src="img/works-3.jpg" alt="work" width="293" height="400">
+            <img class="works__img works__img--right" src="img/works-4.jpg" alt="work" width="293" height="400">
+            <div class="works__item-description">
+              - Демонтажные работы<br>
+              - Возведение перегородок из ГКЛ<br>
+              - Монтаж системы кондиционирования<br>
+              - Монтаж потолка типа "Армстронг"<br>
+              - Монтаж дверных проемов<br>
+              - Установка дверей<br>
+              - Покраска стен<br>
+              - Устройство наливного пола<br>
+              - Укладка плитки на пол<br>
+              - Монтаж пластикового плинуса<br>
+              - Электромонтажные работы<br>
+              - Монтаж СКС<br><br>
+              Страхи: уложиться в срок чтобы обеспечить
+              бесперебойную работу сотрудников.<br><br>
+              Цена на период проведения работ осталась неизменной.<br><br>
+              * В стоимость включена работа,
+              строительный и отделочный материал
+            </div>
+          </div><!--work__item end-->
+        </div><!--work-2 end-->
+        <div class="works__work works__work-3">
+          <h3>Ремонт офиса компании ООО "СК "Согласие"</h3>
+          <p>г.Москва, ул.Гиляровского, д.42</p>
+          <div class="works__stats">
+            <div class="works__stats-area">Общая площадь<span class="works__stats-data">112м<sup>2</sup></span></div>
+            <div class="works__stats-price">Стоимость<span class="works__stats-data">761 600 руб</span></div>
+            <div class="works__stats-time">Срок<span class="works__stats-data">48 дней</span></div>
+            <div class="popup">
+              <a class="popup__regards-open">благодарственное письмо</a>
+              <div class="popup__regard-img-container">
+                <img class="popup__regards-img" src="img/regards-3.jpg" alt="regards" width="480" height="678">
+                <a class="popup__regards-close"></a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <img class="works__img works__img--left" src="img/works-5.jpg" alt="work" width="293" height="400">
+            <img class="works__img works__img--right" src="img/works-6.jpg" alt="work" width="293" height="400">
+            <div class="works__item-description">
+              - Демонтажные работы<br>
+              - Возведение перегородок из ГКЛ<br>
+              - Монтаж системы кондиционирования<br>
+              - Монтаж потолка типа "Армстронг"<br>
+              - Звукоизоляция помещений<br>
+              - Монтаж дверных проемов<br>
+              - Установка дверей<br>
+              - Покраска стен<br>
+              - Устройство наливного пола<br>
+              - Укладка плитки на пол<br>
+              - Укладка ковролина<br>
+              - Электромонтажные работы<br>
+              - Монтаж СКС<br>
+              - Сантехнические работы<br><br>
+              Страхи: уложиться в срок чтобы обеспечить
+              бесперебойную работу сотрудников.<br><br>
+              Цена на период проведения работ осталась неизменной.<br><br>
+              * В стоимость включена работа,
+              строительный и отделочный материал
+            </div>
+          </div><!--work__item end-->
+        </div><!--work-3 end-->
+      </div>
+    </section>
+    <section class="masters">
+      <div class="wrapper">
+        <h2 class="masters__title">Наши мастера</h2>
+        <input class="masters__input" id="masters__input-1" type="radio" name="masters__input" checked>
+        <input class="masters__input" id="masters__input-2" type="radio" name="masters__input">
+        <input class="masters__input" id="masters__input-3" type="radio" name="masters__input">
+        <div class="masters__block masters__block--1">
+          <div class=" masters__about masters__about--big">
+            <div class="masters__item-big">
+              <img src="img/master-1.jpg" alt="master" width="340" height="240">
+              <div class="masters__info">
+                <span>Алексей Николаевич</span>
+                Бригадир MMG Service Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-big">
+              <img src="img/master-2.jpg" alt="master" width="340" height="240">
+              <div class="masters__info">
+                <span>Алексей Николаевич</span>
+                Бригадир MMG Service Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-big">
+              <img src="img/master-3.jpg" alt="master" width="340" height="240">
+              <div class="masters__info">
+                <span>Алексей Николаевич</span>
+                Бригадир MMG Service Стаж работы: 12 лет
+              </div>
+            </div>
+          </div>
+          <div class="masters__about masters__about--small">
+            <div class="masters__item-small">
+              <img src="img/master-small-1.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-small">
+              <img src="img/master-small-2.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-small">
+              <img src="img/master-small-1.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-small">
+              <img src="img/master-small-2.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-small">
+              <img src="img/master-small-1.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+            <div class="masters__item-small">
+              <img src="img/master-small-1.jpg" alt="master" width="160" height="120">
+              <div class="masters__info masters__info--small">
+                <span>Алексей<br>Николаевич</span>
+                Бригадир MMG Service<br>Стаж работы: 12 лет
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masters__block--2 masters__block">
+          Содержимое 2-го блока
+        </div>
+        <div class="masters__block--3 masters__block">
+          Содержимое 3-го блока
+        </div>
+        <div class="pagination pagination--masters">
+          <label for="masters__input-1">1</label>
+          <label for="masters__input-2">2</label>
+          <label for="masters__input-3">3</label>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="wrapper">
+        <h2 class="about__title">Выполняем ремонт полностью "под ключ"</h2>
+        <div class="about__item">
+          <img class="about__img" src="img/about-1.jpg" alt="about" width="180" height="100">
+          <span>Закупка и доставка материалов по смете</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-2.jpg" alt="about" width="180" height="100">
+          <span>Штукатурка, шпаклевка</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-3.jpg" alt="about" width="180" height="100">
+          <span>Стяжка, наливной пол</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-4.jpg" alt="about" width="180" height="100">
+          <span>Укладка плитки</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-5.jpg" alt="about" width="180" height="100">
+          <span>Покраска</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-6.jpg" alt="about" width="180" height="100">
+          <span>Подвесные потолки</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-7.jpg" alt="about" width="180" height="100">
+          <span>СКУД</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-8.jpg" alt="about" width="180" height="100">
+          <span>Электромонтаж</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-9.jpg" alt="about" width="180" height="100">
+          <span>Сантехнические работы</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-10.jpg" alt="about" width="180" height="100">
+          <span>Кондиционирование</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-11.jpg" alt="about" width="180" height="100">
+          <span>Вентиляция</span>
+        </div>
+        <div class="about__item">
+          <img class="about__img" src="img/about-12.jpg" alt="about" width="180" height="100">
+          <span>Генеральная уборка после ремонта</span>
+        </div>
+      </div>
+    </section>
+    <section class="proj">
+      <div class="wrapper">
+        <h2 class="proj__title">Выполним архитектурное<br>и инженерное проектирование</h2>
+        <ul class="proj__list">
+          <li>Предпроектные работы</li>
+          <li>Эскизный проект</li>
+          <li>Архитектурный проект</li>
+          <li>Конструктивный проект</li>
+          <li>Генеральный план</li>
+          <li>Инженерные систтемы и обследование зданий</li>
+        </ul>
+        <form class="proj__form" method="post" action="php/mailer.php">
+          <h3 class="proj__form-title"><span>Оставьте заявку</span><br> на бесплатный расчет стоимости</h3>
+          <input type="text" placeholder="Ваше имя" name="name">
+          <input type="text" placeholder="*Ваш телефон" name="phone">
+          <button type="submit" name="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
+    <section class="watch">
+      <div class="wrapper">
+        <img class="watch__img" src="img/watch-bg.jpg" alt="watch">
+        <div class="watch__description">
+          <h2 class="watch__title">Смотрите за ремонтом с вашего смартфона</h2>
+          На весь период работ на объекте установлена камера с выводом видео на ваш смартфон.
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="wrapper">
+        <div class="features__block">
+          <h2 class="features__title">"Работайте с нами!"</h2>
+          <div class="features__item">Приезжайте к нам на текущий объект и Вы увидите все не на словах, а на деле!</div>
+          <div class="features__item">Фиксированная цена по договору. Мы не выходим за рамки сметы.</div>
+          <div class="features__item">Только опытные мастера. Все работы по СНИП.</div>
+          <div class="features__item">Сроки работ прописываются в договоре. Мы выплатим 3% за каждый день просрочки.</div>
+        </div>
+        <form class="features__form" method="post" action="php/mailer.php">
+          <h3 class="features__form-title"><span>Вызовите бесплатно</span><br>нашего специалиста для расчета сметы</h3>
+          <input type="text" placeholder="Ваше имя" name="name">
+          <input type="text" placeholder="*Ваш телефон" name="phone">
+          <button type="submit">Оставить заявку</button>
+          <p>*Вы можете использовать эту форму для заказа обратного звонка.</p>
+        </form>
+      </div>
+    </section>
+    <section class="map">
+      <div class="wrapper">
+        <div class="map__container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.734222054042!2d37.67351578208392!3d55.7021879546902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4cf44c7def7%3A0x11398dc228b0777f!2z0YPQuy4g0KLRgNC-0YTQuNC80L7QstCwLCAyNNC6MSwg0JzQvtGB0LrQstCwLCAxMTU0MzI!5e0!3m2!1sru!2sru!4v1461230759581" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="map__content">
+          <h2 class="map__title">Приезжайте в гости!</h2>
+          <p>Предупредите заранеео своем приезде нашего менеджера.</p>
+          <a href="tel:+79370379773">Связь с менеджером</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__copyright">© 2016 MMG Service. Все права защищены. ОГРН 1137746866949 ИНН: 7713776494.</div>
+        <div class="footer__made-by">Упаковано <a href="http://nextteam.ru/" target="_blank">Next-team</a> в 2016 году</div>
+      </div>
+    </footer>
+</body>
+</html>

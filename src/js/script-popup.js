@@ -1,0 +1,23 @@
+$(document).ready(function(){
+  $(".header-content__access-open").click(function(){
+    $(".header-content__access-img").show();
+    $(".overlay").show();
+    $(".header-content__access-close").show();
+  })
+  $(".header-content__access-close").click(function(){
+    $(".header-content__access-img").hide();
+    $(".overlay").hide();
+    $(".header-content__access-close").hide();
+  })
+
+  $(".popup__regards-open").click(function(){
+    $(".popup__regards-close").show();
+    $(".popup__regard-img-container").show();
+    $(".overlay").show();
+  })
+  $(".popup__regards-close").click(function(){
+    $(".popup__regards-close").hide();
+    $(".popup__regard-img-container").hide();
+    $(".overlay").hide();
+  })
+});
